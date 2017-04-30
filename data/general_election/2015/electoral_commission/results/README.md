@@ -1,5 +1,8 @@
 # UK Parliament general election results (7th May 2015)
 
+## Source
+http://www.electoralcommission.org.uk/our-work/our-research/electoral-data
+
 ## Raw files
 - `RESULTS.csv`
 - `RESULTS FOR ANALYSIS.csv`
