@@ -1,7 +1,10 @@
-# Ignore datasets
+# Python files
+*.pyc
+
+# Datasets
 data/**/*.csv
 data/**/*.feather
 data/**/*.xls
 
-# Ignore notebooks
+# Notebooks
 data/**/*.ipynb
