@@ -14,7 +14,7 @@ def main(ROOT_DIR):
     target = ROOT_DIR / 'raw'
 
     # Download URL into local directory
-    print('Downloading {}'.format(filename))
+    print('Downloading into {}'.format(target.resolve()))
     with open(filename, 'wb') as f:
         response = requests.get(url + filename)
         f.write(response.content)
