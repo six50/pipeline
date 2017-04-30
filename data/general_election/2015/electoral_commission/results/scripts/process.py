@@ -1,3 +1,4 @@
+import feather
 import pandas as pd
 from pathlib import Path
 
@@ -9,7 +10,7 @@ ROOT_DIR = Path('../')
 print('Read and clean RESULTS FOR ANALYSIS.csv')
 
 # Import general election results
-results = pd.read_csv(ROOT_DIR / 'raw/RESULTS FOR ANALYSIS.csv')
+results = pd.read_csv(ROOT_DIR / 'raw' / 'RESULTS FOR ANALYSIS.csv')
 
 # Remove 'Unnamed: 9' columnd
 del results['Unnamed: 9']
@@ -37,7 +38,7 @@ assert(results.shape == (650, 146))
 print('Read and clean CONSTITUENCY.csv')
 
 # Import constituency data
-constituency = pd.read_csv(ROOT_DIR / 'raw/CONSTITUENCY.csv', encoding='latin1')
+constituency = pd.read_csv(ROOT_DIR / 'raw' / 'CONSTITUENCY.csv', encoding='latin1')
 
 # Remove rows where Constituency Name is blank
 blank_rows = constituency['Constituency Name'].isnull()
@@ -72,4 +73,8 @@ column_order = ['Press Association ID Number', 'Constituency ID', 'Constituency 
                 'County', 'Region ID', 'Region', 'Country',  'Election Year', 'Electorate',
                 'Valid Votes'] + list(results.columns[9:146])
 results = results[column_order]
-results.to_csv(ROOT_DIR / 'clean/ge_2015_results.csv', index=False)
+
+# Export as both CSV and Feather
+file_path = ROOT_DIR / 'clean'
+results.to_csv(file_path / 'ge_2015_results.csv', index=False)
+feather.write_dataframe(results, str(file_path / 'results.feather'))

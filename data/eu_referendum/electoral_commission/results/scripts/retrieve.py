@@ -1,7 +1,5 @@
-import os
 from pathlib import Path
 import requests
-import zipfile
 
 # Config
 url = 'http://www.electoralcommission.org.uk/__data/assets/file/0014/212135/'

@@ -1,3 +1,5 @@
+Cython==0.25.2
+feather-format==0.3.1
 numpy==1.12.1
 pandas==0.19.2
 python-dateutil==2.6.0
