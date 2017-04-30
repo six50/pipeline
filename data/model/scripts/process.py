@@ -11,6 +11,9 @@ print('Importing data')
 
 # Import general election results
 ge_results = {}
+# file_path = DATA_DIR / 'general_election' / '2010' / 'electoral_commission' / 'results' / 'clean'
+# ge_results['2010'] = pd.read_csv(file_path / 'ge_2010_results.csv')
+
 file_path = DATA_DIR / 'general_election' / '2015' / 'electoral_commission' / 'results' / 'clean'
 ge_results['2015'] = pd.read_csv(file_path / 'ge_2015_results.csv')
 

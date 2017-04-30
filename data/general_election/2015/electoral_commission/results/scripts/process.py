@@ -77,4 +77,4 @@ results = results[column_order]
 # Export as both CSV and Feather
 file_path = ROOT_DIR / 'clean'
 results.to_csv(file_path / 'ge_2015_results.csv', index=False)
-feather.write_dataframe(results, str(file_path / 'results.feather'))
+feather.write_dataframe(results, str(file_path / 'ge_2015_results.feather'))
