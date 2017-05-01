@@ -6,13 +6,21 @@
 
 ## Raw files
 - **6th May 2010:**
-  - `GE2010-results-flatfile-website.xls`
+  - `GE2010-results-flatfile-website.xls` ([download from SixFifty S3](https://s3-eu-west-1.amazonaws.com/sixfifty/GE2010-results-flatfile-website.xls))
 - **7th May 2015:**
     - `RESULTS.csv`
-    - `RESULTS FOR ANALYSIS.csv`
+    - `RESULTS FOR ANALYSIS.csv` ([download from SixFifty S3](https://s3-eu-west-1.amazonaws.com/sixfifty/CONSTITUENCY.csv))
     - `CONSTITUENCY.csv`
     - `PARTY NAMES.csv`
     - `NOTES.csv`
+
+## Cleaned files
+- **6th May 2010:**
+  - `ge_2010_results.csv` ([download from SixFifty S3](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2010_results.csv))
+  - `ge_2010_results.feather` ([download from SixFifty S3](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2010_results.feather))
+- **7th May 2015:**
+  - `ge_2015_results.csv` ([download from SixFifty S3](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2015_results.csv))
+  - `ge_2015_results.feather` ([download from SixFifty S3](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2015_results.feather))
 
 ## Retrieving the data
 ```
