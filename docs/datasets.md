@@ -17,8 +17,7 @@ We aim to provide our processed datasets in both CSV and [Feather](https://blog.
 | [`model_2015`](../data/model/clean/) | Clean version of 2015 GE data along with counties and EU Referendum results at a regional level | [CSV](https://s3-eu-west-1.amazonaws.com/sixfifty/model_2015.csv), [Feather](https://s3-eu-west-1.amazonaws.com/sixfifty/model_2015.feather) | [data/model/clean/model_2015.csv](../data/model/clean/) |
 
 ## UK Political Polling
-
-A manually curated set of poll results can be downloaded in a variety of formats:
+A manually curated set of poll results can be downloaded in a variety of formats. See [data/polls/](../data/polls/) for more information including a data dictionary.
 - [Download as JSON](https://s3-eu-west-1.amazonaws.com/sixfifty/polls.json)
 - [Download as CSV](https://s3-eu-west-1.amazonaws.com/sixfifty/polls.csv)
 - [Download as Feather](https://s3-eu-west-1.amazonaws.com/sixfifty/polls.feather)
