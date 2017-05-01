@@ -1,7 +1,13 @@
 # SixFifty Datasets
 
+## Raw
 | Dataset | Date | Format | Source | Licence | Download URL | Repo Path |
 | -- | -- | -- | -- | -- | -- | -- |
 | UK Parliament general election results | 6th May 2010 | XLS | [Electoral Commission](http://www.electoralcommission.org.uk/our-work/our-research/electoral-data) | [Open Government Licence v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) | [GE2010-results-flatfile-website.xls](http://www.electoralcommission.org.uk/__data/assets/excel_doc/0003/105726/GE2010-results-flatfile-website.xls) | [/data/general_election/electoral_commission/results/](../data/general_election/electoral_commission/results/) |
 | UK Parliament general election results | 7th May 2015 | CSV - Zip file | [Electoral Commission](http://www.electoralcommission.org.uk/our-work/our-research/electoral-data) | [Open Government Licence v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) | [2015-UK-general-election-data-results-WEB.zip](http://www.electoralcommission.org.uk/__data/assets/file/0004/191650/2015-UK-general-election-data-results-WEB.zip) | [/data/general_election/electoral_commission/results/](../data/general_election/electoral_commission/results/) |
 | EU Referendum results | 23rd June 2016 | CSV | [Electoral Commission](http://www.electoralcommission.org.uk/find-information-by-subject/elections-and-referendums/upcoming-elections-and-referendums/eu-referendum/electorate-and-count-information) | [Open Government Licence v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) | [EU-referendum-result-data.csv](http://www.electoralcommission.org.uk/__data/assets/file/0014/212135/EU-referendum-result-data.csv) | [/data/eu_referendum/electoral_commission/results/](../data/eu_referendum/electoral_commission/results/) |
+
+## Processed
+| Dataset | Formats | Description | Download URL | Repo Path |
+| -- | -- | -- | -- | -- |
+| [`model_2015`](../data/model/clean/) | CSV, [Feather](https://blog.rstudio.org/2016/03/29/feather/) | Clean version of 2015 GE data along with counties and EU Referendum results at a regional level | n/a | [data/model/clean/model_2015.csv](../data/model/clean/) |
