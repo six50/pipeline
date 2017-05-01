@@ -15,3 +15,10 @@ We aim to provide our processed datasets in both CSV and [Feather](https://blog.
 | [`ge_2010_results`](../data/general_election/electoral_commission/results/README.md) | Cleaner version of 2010 GE data | [CSV](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2010_results.csv), [Feather](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2010_results.feather) | [data/general_election/electoral_commission/results/clean/ge_2010_results.csv](../data/general_election/electoral_commission/results/README.md) |
 | [`ge_2015_results`](../data/general_election/electoral_commission/results/README.md) | Cleaner version of 2015 GE data | [CSV](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2015_results.csv), [Feather](https://s3-eu-west-1.amazonaws.com/sixfifty/ge_2015_results.feather) | [data/general_election/electoral_commission/results/clean/ge_2015_results.csv](../data/general_election/electoral_commission/results/README.md) |
 | [`model_2015`](../data/model/clean/) | Clean version of 2015 GE data along with counties and EU Referendum results at a regional level | [CSV](https://s3-eu-west-1.amazonaws.com/sixfifty/model_2015.csv), [Feather](https://s3-eu-west-1.amazonaws.com/sixfifty/model_2015.feather) | [data/model/clean/model_2015.csv](../data/model/clean/) |
+
+## UK Political Polling
+
+A manually curated set of poll results can be downloaded in a variety of formats:
+- [Download as JSON](https://s3-eu-west-1.amazonaws.com/sixfifty/polls.json)
+- [Download as CSV](https://s3-eu-west-1.amazonaws.com/sixfifty/polls.csv)
+- [Download as Feather](https://s3-eu-west-1.amazonaws.com/sixfifty/polls.feather)
