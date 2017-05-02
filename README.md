@@ -3,13 +3,16 @@ ETL data pipeline for SixFifty modelling &amp; analytics.
 
 Dataset sources can be found under [docs](docs/datasets.md).
 
-## Filling this repo with data
+## Filling this repo with data (short version)
 1. Check you're running Python 3.
 2. Ensure you have the Python requirements with `pip install -r requirements.txt`
 3. Then cd into the repo root (where this README is located) and run the following to download, populate this repo with data and auto-clean it ready for modelling:
 ```
 python data/generate_data.py
 ```
+
+## Filling this repo with data (detailed setup instructions)
+Please see [these instructions on installing Anaconda + dependencies + configuring S3 tokens](docs/setup.md).
 
 ## Licences
 | Name | Description | Attribution Statement |
