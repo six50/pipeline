@@ -12,19 +12,29 @@ The cleaned dataset is available for download in three different formats:
 
 | Column | Type | Description |
 | -- | -- | -- |
-| `pollster` | string | Polling company name, e.g. `YouGov` |
-| `publisher` | string | Publisher name, e.g. `Sunday Times` |
-| `sampled_from` | string | Date sampled from, e.g. `27 Apr 2017` |
-| `sampled_to` | string | Date sampled to, e.g. `28 Apr 2017` |
-| `sample_size` | float | Total sample size, e.g. `1612.0` |
-| `con` | float | Percentage considering voting Conservative, e.g. `0.44` |
-| `lab` | float | Percentage considering voting Labour, e.g. `0.31` |
-| `lib` | float | Percentage considering voting Liberal Democrat, e.g. `0.11` |
-| `ukip` | float | Percentage considering voting UKIP, e.g. `0.06` |
-| `green` | float | Percentage considering voting Green, e.g. `0.02` |
-| `other` | float | Percentage considering voting for other parties, e.g. `0.06` |
-| `total` | float | Total of con + lab + lib + ukip + green, `other` is derived from this, e.g. `0.94` |
-| `source` | string | Poll data source |
+| `company` | string | Polling company name, e.g. `YouGov` |
+| `client` | string | Publisher name, e.g. `Times` |
+| `date` | string | Date sampled to, e.g. `2017-05-03` |
+| `con` | float | Percentage considering voting Conservative, e.g. `0.48` |
+| `lab` | float | Percentage considering voting Labour, e.g. `0.29` |
+| `ld` | float | Percentage considering voting Liberal Democrat, e.g. `0.1` |
+| `ukip` | float | Percentage considering voting UKIP, e.g. `0.05` |
+| `grn` | float | Percentage considering voting Green, e.g. `0.02` |
+
+## SixFifty Smoothed Polls Dataset
+Download links:
+- `polls_smoothed.json` ([download](https://s3-eu-west-1.amazonaws.com/sixfifty/polls_smoothed.json))
+- `polls_smoothed.csv` ([download](https://s3-eu-west-1.amazonaws.com/sixfifty/polls_smoothed.csv))
+- `polls_smoothed.feather` ([download](https://s3-eu-west-1.amazonaws.com/sixfifty/polls_smoothed.feather))
+
+| Column | Type | Description |
+| -- | -- | -- |
+| `date` | string | Date sampled to, e.g. `2017-05-03` |
+| `con` | float | Smoothed value for Conservative vote intention, e.g. `0.4789333335794975` |
+| `lab` | float | Smoothed value for Labour vote intention, e.g. `0.28146406464685286` |
+| `ld` | float | Smoothed value for Liberal Democrat vote intention, e.g. `0.09862776104756443` |
+| `ukip` | float | Smoothed value for UKIP vote intention, e.g. `0.055748373852953115` |
+| `grn` | float | Smoothed value for Green vote intention, e.g. `0.02525062220421586` |
 
 ## Scripts
 Executing `python generate_json.py` from this directory will:

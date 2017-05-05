@@ -22,18 +22,28 @@ if __name__ == '__main__':
     polls['To'] = pd.to_datetime(polls['To'])
 
     # Rename & rearrange columns
+    party_names = ['con', 'lab', 'ld', 'ukip', 'grn']
     polls.columns = [x.lower().replace(" ", "_") for x in polls.columns]
     polls.columns = ['date' if x == 'to' else x for x in polls.columns]
-    polls = polls[['company', 'client', 'date', 'con', 'lab', 'ld', 'ukip', 'grn']]
+    polls = polls[['company', 'client', 'date'] + party_names]
 
-    # Add LOWESS smoothing
-    #for col in ['con', 'lab', 'ld']:
-    #    polls[col + '_smooth'] = sm.nonparametric.lowess(polls[col], polls['date'], frac=0.1)[:, 1]
+    # Add LOWESS smoothing for 2017 data only (missing values for grn until 2016-07-05)
+    polls_smoothed = polls[polls.date >= '2017-01-01'].groupby('date').mean().reset_index()
+    for col in party_names:
+        polls_smoothed[col + '_smooth'] = sm.nonparametric.lowess(polls_smoothed[col],
+                                                                  polls_smoothed['date'],
+                                                                  frac=0.15)[:, 1]
+    polls_smoothed = polls_smoothed[['date'] + [col + '_smooth' for col in party_names]]
+    polls_smoothed.columns = ['date'] + party_names
 
     # EXPORT
     polls.to_json(str(DATA_DIR / 'polls.json'), orient='records')
     polls.to_csv(DATA_DIR / 'polls.csv', index=False)
     feather.write_dataframe(polls, str(DATA_DIR / 'polls.feather'))
+
+    polls_smoothed.to_json(str(DATA_DIR / 'polls_smoothed.json'), orient='records')
+    polls_smoothed.to_csv(DATA_DIR / 'polls_smoothed.csv', index=False)
+    feather.write_dataframe(polls_smoothed, str(DATA_DIR / 'polls_smoothed.feather'))
 
     # Upload to S3
     print('Uploading to S3...')
@@ -41,6 +51,9 @@ if __name__ == '__main__':
         DATA_DIR / 'polls.json',
         DATA_DIR / 'polls.csv',
         DATA_DIR / 'polls.feather',
+        DATA_DIR / 'polls_smoothed.json',
+        DATA_DIR / 'polls_smoothed.csv',
+        DATA_DIR / 'polls_smoothed.feather',
     ]
     for file_path in files_to_upload:
         print("\t{}".format(file_path))
