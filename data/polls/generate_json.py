@@ -1,4 +1,5 @@
 import feather
+import json
 import pandas as pd
 from pathlib import Path
 import statsmodels.api as sm
@@ -7,15 +8,17 @@ from subprocess import DEVNULL, STDOUT, check_call
 
 if __name__ == '__main__':
 
+    # Config
     DATA_DIR = Path('.') / 'data'
+    url = "https://docs.google.com/spreadsheets/d/1CHMArwUdVza-ayOT1aG2tRJJfa1OWvwfMGiCu20X7Ys/export?gid=1495247060&format=csv"
+    cutoff_date = '2017-01-01'
 
     print('Downloading from Google Sheet')
-    url = "https://docs.google.com/spreadsheets/d/1CHMArwUdVza-ayOT1aG2tRJJfa1OWvwfMGiCu20X7Ys/export?gid=1495247060&format=csv"
     polls = pd.read_csv(url)
 
     # PROCESS
     # Format percentages into decimal
-    for col in ['CON', 'LAB', 'LD', 'UKIP', 'GRN', 'Other']:
+    for col in ['CON', 'LAB', 'LD', 'UKIP', 'GRN', 'SNP']:
         polls[col] = polls[col].apply(lambda x: x / 100)
 
     # Process dates
@@ -24,16 +27,15 @@ if __name__ == '__main__':
     # Rename & rearrange columns
     party_names = ['con', 'lab', 'ld', 'ukip', 'grn']
     polls.columns = [x.lower().replace(" ", "_") for x in polls.columns]
-    polls.columns = ['date' if x == 'to' else x for x in polls.columns]
-    polls = polls[['company', 'client', 'date'] + party_names]
+    del polls['source']
 
     # Add LOWESS smoothing for 2017 data only (missing values for grn until 2016-07-05)
-    polls_smoothed = polls[polls.date >= '2017-01-01'].groupby('date').mean().reset_index()
+    polls_smoothed = polls[polls.to >= cutoff_date].groupby('to').mean().reset_index()
     for col in party_names:
         polls_smoothed[col + '_smooth'] = sm.nonparametric.lowess(polls_smoothed[col],
-                                                                  polls_smoothed['date'],
+                                                                  polls_smoothed['to'],
                                                                   frac=0.15)[:, 1]
-    polls_smoothed = polls_smoothed[['date'] + [col + '_smooth' for col in party_names]]
+    polls_smoothed = polls_smoothed[['to'] + [col + '_smooth' for col in party_names]]
     polls_smoothed.columns = ['date'] + party_names
 
     # EXPORT
@@ -45,6 +47,14 @@ if __name__ == '__main__':
     polls_smoothed.to_csv(DATA_DIR / 'polls_smoothed.csv', index=False)
     feather.write_dataframe(polls_smoothed, str(DATA_DIR / 'polls_smoothed.feather'))
 
+    # Combine polls with polls_smoothed
+    combined = [
+        json.loads(polls[polls.to > cutoff_date].to_json(orient='records')),
+        json.loads(polls_smoothed.to_json(orient='records'))
+    ]
+    with open(str(DATA_DIR / 'poll_tracker.json'), 'w') as f:
+        f.write(json.dumps(combined))
+
     # Upload to S3
     print('Uploading to S3...')
     files_to_upload = [
@@ -54,6 +64,7 @@ if __name__ == '__main__':
         DATA_DIR / 'polls_smoothed.json',
         DATA_DIR / 'polls_smoothed.csv',
         DATA_DIR / 'polls_smoothed.feather',
+        DATA_DIR / 'poll_tracker.json',
     ]
     for file_path in files_to_upload:
         print("\t{}".format(file_path))
