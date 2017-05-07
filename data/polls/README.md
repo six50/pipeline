@@ -1,8 +1,13 @@
 # UK Polling Data
 
 ## Sources
-- http://www.electoralcalculus.co.uk/polls.html
-- http://www.markpack.org.uk/opinion-polls/
+- Directly from polling companies' provided tables, where possible
+- Secondary sources:
+  - http://www.markpack.org.uk/opinion-polls/
+  - http://opinionbee.uk/polls/westminster
+  - http://elections.huffingtonpost.com/pollster/2017-united-kingdom-general-election
+  - http://www.electoralcalculus.co.uk/polls.html
+  
 
 ## SixFifty Cleaned Polls Dataset
 The cleaned dataset is available for download in three different formats:
