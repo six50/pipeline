@@ -1,4 +1,5 @@
 import feather
+import gzip
 import json
 import pandas as pd
 from pathlib import Path
@@ -23,6 +24,7 @@ if __name__ == '__main__':
 
     # Process dates
     polls['To'] = pd.to_datetime(polls['To'])
+    polls['From'] = pd.to_datetime(polls['From'])
 
     # Rename & rearrange columns
     party_names = ['con', 'lab', 'ld', 'ukip', 'grn']
@@ -52,8 +54,8 @@ if __name__ == '__main__':
         json.loads(polls[polls.to > cutoff_date].to_json(orient='records')),
         json.loads(polls_smoothed.to_json(orient='records'))
     ]
-    with open(str(DATA_DIR / 'poll_tracker.json'), 'w') as f:
-        f.write(json.dumps(combined))
+    with gzip.open(str(DATA_DIR / 'poll_tracker.json.gz'), 'w') as f:
+        f.write(json.dumps(combined).encode('utf-8'))
 
     # Upload to S3
     print('Uploading to S3...')
@@ -64,7 +66,7 @@ if __name__ == '__main__':
         DATA_DIR / 'polls_smoothed.json',
         DATA_DIR / 'polls_smoothed.csv',
         DATA_DIR / 'polls_smoothed.feather',
-        DATA_DIR / 'poll_tracker.json',
+        DATA_DIR / 'poll_tracker.json.gz',
     ]
     for file_path in files_to_upload:
         print("\t{}".format(file_path))

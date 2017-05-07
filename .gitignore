@@ -4,6 +4,7 @@
 # Datasets
 data/**/*.csv
 data/**/*.feather
+data/**/*.gz
 data/**/*.json
 data/**/*.xls
 
