@@ -25,6 +25,7 @@ The cleaned dataset is available for download in three different formats:
 | `ld` | float | Percentage considering voting Liberal Democrat, e.g. `0.1` |
 | `ukip` | float | Percentage considering voting UKIP, e.g. `0.05` |
 | `grn` | float | Percentage considering voting Green, e.g. `0.02` |
+| `sno` | float | Percentage considering voting SNP, e.g. `0.02` |
 
 ## SixFifty Smoothed Polls Dataset
 Download links:
@@ -40,6 +41,7 @@ Download links:
 | `ld` | float | Smoothed value for Liberal Democrat vote intention, e.g. `0.09862776104756443` |
 | `ukip` | float | Smoothed value for UKIP vote intention, e.g. `0.055748373852953115` |
 | `grn` | float | Smoothed value for Green vote intention, e.g. `0.02525062220421586` |
+| `snp` | float | Smoothed value for SNP vote intention, e.g. `0.01` |
 
 ## Scripts
 Executing `python generate_json.py` from this directory will:

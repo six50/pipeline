@@ -27,12 +27,12 @@ if __name__ == '__main__':
     polls['From'] = pd.to_datetime(polls['From'])
 
     # Rename & rearrange columns
-    party_names = ['con', 'lab', 'ld', 'ukip', 'grn']
+    party_names = ['con', 'lab', 'ld', 'ukip', 'grn', 'snp']
     polls.columns = [x.lower().replace(" ", "_") for x in polls.columns]
     del polls['source']
 
     # Add LOWESS smoothing for 2017 data only (missing values for grn until 2016-07-05)
-    polls_smoothed = polls[polls.to >= cutoff_date].groupby('to').mean().reset_index()
+    polls_smoothed = polls[polls.to >= cutoff_date].groupby('to').mean().reset_index().ffill(limit=None)
     for col in party_names:
         polls_smoothed[col + '_smooth'] = sm.nonparametric.lowess(polls_smoothed[col],
                                                                   polls_smoothed['to'],
