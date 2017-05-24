@@ -11,66 +11,100 @@ if __name__ == '__main__':
 
     # Config
     DATA_DIR = Path('.') / 'data'
-    url = "https://docs.google.com/spreadsheets/d/1CHMArwUdVza-ayOT1aG2tRJJfa1OWvwfMGiCu20X7Ys/export?gid=1495247060&format=csv"
+    base_url = 'https://docs.google.com/spreadsheets/d/1CHMArwUdVza-ayOT1aG2tRJJfa1OWvwfMGiCu20X7Ys/export'
+    urls = {
+        'uk': base_url + '?gid=1495247060&format=csv',
+        'london': base_url + '?gid=683561754&format=csv',
+        'scotland': base_url + '?gid=1896448771&format=csv',
+        'wales': base_url + '?gid=2059731736&format=csv',
+        'ni': base_url + '?gid=1413308295&format=csv'
+    }
     cutoff_date = '2017-01-01'
 
+    # RETRIEVE DATA
     print('Downloading from Google Sheet')
-    polls = pd.read_csv(url)
+    polls = {}
+    for geo in urls.keys():
+        polls[geo] = pd.read_csv(urls[geo])
 
     # PROCESS
-    # Format percentages into decimal
-    for col in ['CON', 'LAB', 'LD', 'UKIP', 'GRN', 'SNP']:
-        polls[col] = polls[col].apply(lambda x: x / 100)
+    # Define parties, respect ordering from Google Doc
+    def get_party_names(input_list):
+        # Ignore these columns
+        cols_to_ignore = ['Company', 'Client', 'Type', 'Method', 'From', 'To', 'Sample Size', 'Source', 'PDF']
+        for col_name in cols_to_ignore:
+            if col_name in input_list:
+                input_list.remove(col_name)
+        # Slugify parties
+        input_list = [x.lower().replace(" ", "_") for x in input_list]
+        return input_list
 
-    # Process dates
-    polls['To'] = pd.to_datetime(polls['To'])
-    polls['From'] = pd.to_datetime(polls['From'])
+    parties = {}
+    for geo in urls.keys():
+        parties[geo] = get_party_names(list(polls[geo].columns))
 
-    # Rename & rearrange columns
-    party_names = ['con', 'lab', 'ld', 'ukip', 'grn', 'snp']
-    polls.columns = [x.lower().replace(" ", "_") for x in polls.columns]
-    del polls['source']
+    # Formatting
+    for geo in parties.keys():
 
-    # Add LOWESS smoothing for 2017 data only (missing values for grn until 2016-07-05)
-    polls_smoothed = polls[polls.to >= cutoff_date].groupby('to').mean().reset_index().ffill(limit=None)
-    for col in party_names:
-        polls_smoothed[col + '_smooth'] = sm.nonparametric.lowess(polls_smoothed[col],
-                                                                  polls_smoothed['to'],
-                                                                  frac=0.15)[:, 1]
-    polls_smoothed = polls_smoothed[['to'] + [col + '_smooth' for col in party_names]]
-    polls_smoothed.columns = ['date'] + party_names
+        # Rename columns
+        polls[geo].columns = [x.lower().replace(" ", "_") for x in polls[geo].columns]
+
+        # Remove cols we don't want
+        if 'source' in polls[geo].columns:
+            del polls[geo]['source']
+
+        # Format percentages into decimal
+        for col in parties[geo]:
+            polls[geo][col] = polls[geo][col].apply(lambda x: x / 100)
+
+        # Process dates
+        polls[geo]['to'] = pd.to_datetime(polls[geo]['to'])
+        polls[geo]['from'] = pd.to_datetime(polls[geo]['from'])
+
+    # Add LOWESS smoothing for 2017 data only
+    polls_smoothed = {}
+    for geo in parties.keys():
+        polls_smoothed[geo] = polls[geo][polls[geo].to >= cutoff_date].groupby('to').mean().reset_index()
+        polls_smoothed[geo] = polls_smoothed[geo].ffill(limit=None).bfill(limit=None)
+        for party in parties[geo]:
+            polls_smoothed[geo][party + '_smooth'] = sm.nonparametric.lowess(polls_smoothed[geo][party],
+                                                                             polls_smoothed[geo]['to'],
+                                                                             frac=0.15)[:, 1]
+        polls_smoothed[geo] = polls_smoothed[geo][['to'] + [col + '_smooth' for col in parties[geo]]]
+        polls_smoothed[geo].columns = ['date'] + parties[geo]
 
     # EXPORT
-    polls.to_json(str(DATA_DIR / 'polls.json'), orient='records')
-    polls.to_csv(DATA_DIR / 'polls.csv', index=False)
-    feather.write_dataframe(polls, str(DATA_DIR / 'polls.feather'))
+    def multi_format_export(df, filename):
+        df.to_json(str(DATA_DIR / (filename + '.json')), orient='records')
+        df.to_csv(DATA_DIR / (filename + '.csv'), index=False)
+        feather.write_dataframe(df, str(DATA_DIR / (filename + '.feather')))
 
-    polls_smoothed.to_json(str(DATA_DIR / 'polls_smoothed.json'), orient='records')
-    polls_smoothed.to_csv(DATA_DIR / 'polls_smoothed.csv', index=False)
-    feather.write_dataframe(polls_smoothed, str(DATA_DIR / 'polls_smoothed.feather'))
+    for geo in parties.keys():
+        filename = 'polls_' + geo if geo != 'uk' else 'polls'
+        multi_format_export(polls[geo], filename)
+        multi_format_export(polls_smoothed[geo], filename + '_smoothed')
 
-    # Combine polls with polls_smoothed
-    combined = [
-        json.loads(polls[polls.to > cutoff_date].to_json(orient='records')),
-        json.loads(polls_smoothed.to_json(orient='records'))
-    ]
-    with open(str(DATA_DIR / 'poll_tracker.json'), 'w') as f:
-        f.write(json.dumps(combined))
-    with gzip.open(str(DATA_DIR / 'poll_tracker.json.gz'), 'w') as f:
-        f.write(json.dumps(combined).encode('utf-8'))
+        # Combine polls with polls_smoothed
+        combined = [
+            json.loads(polls[geo][polls[geo].to > cutoff_date].to_json(orient='records')),
+            json.loads(polls_smoothed[geo].to_json(orient='records'))
+        ]
+        with open(str(DATA_DIR / (filename + '_tracker' + '.json')), 'w') as f:
+            f.write(json.dumps(combined))
+        with gzip.open(str(DATA_DIR / (filename + '_tracker' + '.json.gz')), 'w') as f:
+            f.write(json.dumps(combined).encode('utf-8'))
 
     # Upload to S3
     print('Uploading to S3...')
-    files_to_upload = [
-        DATA_DIR / 'polls.json',
-        DATA_DIR / 'polls.csv',
-        DATA_DIR / 'polls.feather',
-        DATA_DIR / 'polls_smoothed.json',
-        DATA_DIR / 'polls_smoothed.csv',
-        DATA_DIR / 'polls_smoothed.feather',
-        DATA_DIR / 'poll_tracker.json',
-        DATA_DIR / 'poll_tracker.json.gz',
-    ]
+    files_to_upload = []
+    for geo in parties.keys():
+        filename = 'polls_' + geo if geo != 'uk' else 'polls'
+        for file_format in ['.json', '.csv', '.feather']:
+            files_to_upload.append(DATA_DIR / (filename + file_format))
+            files_to_upload.append(DATA_DIR / (filename + '_smoothed' + file_format))
+        files_to_upload.append(DATA_DIR / (filename + '_tracker.json'))
+        files_to_upload.append(DATA_DIR / (filename + '_tracker.json.gz'))
+
     for file_path in files_to_upload:
         print("\t{}".format(file_path))
         key = file_path.name

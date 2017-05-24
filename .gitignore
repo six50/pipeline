@@ -6,7 +6,9 @@ data/**/*.csv
 data/**/*.feather
 data/**/*.gz
 data/**/*.json
+data/**/*.pdf
 data/**/*.xls
+data/**/*.xlsx
 
 # Notebooks
 data/**/*.ipynb
