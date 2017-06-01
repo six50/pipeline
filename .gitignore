@@ -12,3 +12,6 @@ data/**/*.xlsx
 
 # Notebooks
 data/**/*.ipynb
+
+# Whitelists
+!data/bbcdebate/**/*.csv

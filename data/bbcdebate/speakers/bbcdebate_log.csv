@@ -1,0 +1,307 @@
+timestamp,party,speaker,section,counter,time_elapsed
+2017-05-31 19:30:00,,Mishal Husain,Opening credits,86.0,86.0
+2017-05-31 19:31:26,Plaid Cymru,Leanne Wood,Opening statements,67.0,153.0
+2017-05-31 19:32:33,,Mishal Husain,Opening statements,3.0,156.0
+2017-05-31 19:32:36,Green,Caroline Lucas,Opening statements,75.0,231.0
+2017-05-31 19:33:51,,Mishal Husain,Opening statements,4.0,235.0
+2017-05-31 19:33:55,Conservatives,Amber Rudd,Opening statements,68.0,303.0
+2017-05-31 19:35:03,,Mishal Husain,Opening statements,1.0,304.0
+2017-05-31 19:35:04,Labour,Jeremy Corbyn,Opening statements,52.0,356.0
+2017-05-31 19:35:56,,Mishal Husain,Opening statements,3.0,359.0
+2017-05-31 19:35:59,UKIP,Paul Nuttall,Opening statements,68.0,427.0
+2017-05-31 19:37:07,,Mishal Husain,Opening statements,1.0,428.0
+2017-05-31 19:37:08,SNP,Angus Robertson,Opening statements,55.0,483.0
+2017-05-31 19:38:03,,Mishal Husain,Opening statements,3.0,486.0
+2017-05-31 19:38:06,Liberal Democrats,Tim Farron,Opening statements,65.0,551.0
+2017-05-31 19:39:11,,Mishal Husain,Opening statements,41.0,592.0
+2017-05-31 19:39:52,Conservatives,Amber Rudd,Question 1 - Living standards,62.00000000000001,654.0
+2017-05-31 19:40:54,,Mishal Husain,Question 1 - Living standards,1.0,655.0
+2017-05-31 19:40:55,Labour,Jeremy Corbyn,Question 1 - Living standards,54.0,709.0
+2017-05-31 19:41:49,,Mishal Husain,Question 1 - Living standards,4.0,713.0
+2017-05-31 19:41:53,SNP,Angus Robertson,Question 1 - Living standards,88.0,801.0
+2017-05-31 19:43:21,,Mishal Husain,Question 1 - Living standards,1.0,802.0
+2017-05-31 19:43:22,Conservatives,Amber Rudd,Question 1 - Living standards,21.0,823.0
+2017-05-31 19:43:43,Labour,Jeremy Corbyn,Question 1 - Living standards,6.0,829.0
+2017-05-31 19:43:49,Conservatives,Amber Rudd,Question 1 - Living standards,18.0,847.0
+2017-05-31 19:44:07,,Mishal Husain,Question 1 - Living standards,11.0,858.0
+2017-05-31 19:44:18,Liberal Democrats,Tim Farron,Question 1 - Living standards,85.0,943.0
+2017-05-31 19:45:43,,Mishal Husain,Question 1 - Living standards,1.0,944.0
+2017-05-31 19:45:44,Green,Caroline Lucas,Question 1 - Living standards,81.0,1025.0
+2017-05-31 19:47:05,,Mishal Husain,Question 1 - Living standards,2.0,1027.0
+2017-05-31 19:47:07,Conservatives,Amber Rudd,Question 1 - Living standards,16.0,1043.0
+2017-05-31 19:47:23,Green,Caroline Lucas,Question 1 - Living standards,3.0,1046.0
+2017-05-31 19:47:26,Conservatives,Amber Rudd,Question 1 - Living standards,28.0,1074.0
+2017-05-31 19:47:54,Liberal Democrats,Tim Farron,Question 1 - Living standards,3.0,1077.0
+2017-05-31 19:47:57,,Mishal Husain,Question 1 - Living standards,3.0,1080.0
+2017-05-31 19:48:00,Plaid Cymru,Leanne Wood,Question 1 - Living standards,41.0,1121.0
+2017-05-31 19:48:41,UKIP,Paul Nuttall,Question 1 - Living standards,68.0,1189.0
+2017-05-31 19:49:49,SNP,Angus Robertson,Question 1 - Living standards,1.0,1190.0
+2017-05-31 19:49:50,UKIP,Paul Nuttall,Question 1 - Living standards,1.0,1191.0
+2017-05-31 19:49:51,,Mishal Husain,Question 1 - Living standards,3.0,1194.0
+2017-05-31 19:49:54,Labour,Jeremy Corbyn,Question 1 - Living standards,62.00000000000001,1256.0
+2017-05-31 19:50:56,Conservatives,Amber Rudd,Question 1 - Living standards,8.0,1264.0
+2017-05-31 19:51:04,Labour,Jeremy Corbyn,Question 1 - Living standards,3.0,1267.0
+2017-05-31 19:51:07,UKIP,Paul Nuttall,Question 1 - Living standards,10.0,1277.0
+2017-05-31 19:51:17,,Mishal Husain,Question 1 - Living standards,14.0,1291.0
+2017-05-31 19:51:31,Labour,Jeremy Corbyn,Question 1 - Living standards,43.0,1334.0
+2017-05-31 19:52:14,,Mishal Husain,Question 1 - Living standards,3.0,1337.0
+2017-05-31 19:52:17,UKIP,Paul Nuttall,Question 1 - Living standards,8.0,1345.0
+2017-05-31 19:52:25,SNP,Angus Robertson,Question 1 - Living standards,3.0,1348.0
+2017-05-31 19:52:28,UKIP,Paul Nuttall,Question 1 - Living standards,7.0,1355.0
+2017-05-31 19:52:35,Liberal Democrats,Tim Farron,Question 1 - Living standards,34.0,1389.0
+2017-05-31 19:53:09,Conservatives,Amber Rudd,Question 1 - Living standards,35.0,1424.0
+2017-05-31 19:53:44,,Mishal Husain,Question 1 - Living standards,29.000000000000004,1453.0
+2017-05-31 19:54:13,UKIP,Paul Nuttall,Question 2 - Brexit,14.0,1467.0
+2017-05-31 19:54:27,Plaid Cymru,Leanne Wood,Question 2 - Brexit,2.0,1469.0
+2017-05-31 19:54:29,UKIP,Paul Nuttall,Question 2 - Brexit,54.0,1523.0
+2017-05-31 19:55:23,Plaid Cymru,Leanne Wood,Question 2 - Brexit,3.0,1526.0
+2017-05-31 19:55:26,Liberal Democrats,Tim Farron,Question 2 - Brexit,62.00000000000001,1588.0
+2017-05-31 19:56:28,,Mishal Husain,Question 2 - Brexit,2.0,1590.0
+2017-05-31 19:56:30,Conservatives,Amber Rudd,Question 2 - Brexit,36.0,1626.0
+2017-05-31 19:57:06,,Mishal Husain,Question 2 - Brexit,9.0,1635.0
+2017-05-31 19:57:15,Labour,Jeremy Corbyn,Question 2 - Brexit,46.0,1681.0
+2017-05-31 19:58:01,,Mishal Husain,Question 2 - Brexit,3.0,1684.0
+2017-05-31 19:58:04,Labour,Jeremy Corbyn,Question 2 - Brexit,10.0,1694.0
+2017-05-31 19:58:14,,Mishal Husain,Question 2 - Brexit,1.0,1695.0
+2017-05-31 19:58:15,Labour,Jeremy Corbyn,Question 2 - Brexit,11.0,1706.0
+2017-05-31 19:58:26,Conservatives,Amber Rudd,Question 2 - Brexit,1.0,1707.0
+2017-05-31 19:58:27,Labour,Jeremy Corbyn,Question 2 - Brexit,17.0,1724.0
+2017-05-31 19:58:44,,Mishal Husain,Question 2 - Brexit,8.0,1732.0
+2017-05-31 19:58:52,Plaid Cymru,Leanne Wood,Question 2 - Brexit,1.0,1733.0
+2017-05-31 19:58:53,,Mishal Husain,Question 2 - Brexit,12.0,1745.0
+2017-05-31 19:59:05,Plaid Cymru,Leanne Wood,Question 2 - Brexit,4.0,1749.0
+2017-05-31 19:59:09,,Mishal Husain,Question 2 - Brexit,2.0,1751.0
+2017-05-31 19:59:11,Plaid Cymru,Leanne Wood,Question 2 - Brexit,12.0,1763.0
+2017-05-31 19:59:23,,Mishal Husain,Question 2 - Brexit,3.0,1766.0
+2017-05-31 19:59:26,Plaid Cymru,Leanne Wood,Question 2 - Brexit,5.0,1771.0
+2017-05-31 19:59:31,,Mishal Husain,Question 2 - Brexit,5.0,1776.0
+2017-05-31 19:59:36,Plaid Cymru,Leanne Wood,Question 2 - Brexit,30.000000000000004,1806.0
+2017-05-31 20:00:06,UKIP,Paul Nuttall,Question 2 - Brexit,3.0,1809.0
+2017-05-31 20:00:09,Plaid Cymru,Leanne Wood,Question 2 - Brexit,3.0,1812.0
+2017-05-31 20:00:12,UKIP,Paul Nuttall,Question 2 - Brexit,34.0,1846.0
+2017-05-31 20:00:46,Liberal Democrats,Tim Farron,Question 2 - Brexit,11.0,1857.0
+2017-05-31 20:00:57,SNP,Angus Robertson,Question 2 - Brexit,57.0,1914.0
+2017-05-31 20:01:54,,Mishal Husain,Question 2 - Brexit,2.0,1916.0
+2017-05-31 20:01:56,SNP,Angus Robertson,Question 2 - Brexit,30.0,1946.0
+2017-05-31 20:02:26,,Mishal Husain,Question 2 - Brexit,1.0,1947.0
+2017-05-31 20:02:27,SNP,Angus Robertson,Question 2 - Brexit,4.0,1951.0
+2017-05-31 20:02:31,,Mishal Husain,Question 2 - Brexit,1.0,1952.0
+2017-05-31 20:02:32,Green,Caroline Lucas,Question 2 - Brexit,82.0,2034.0
+2017-05-31 20:03:54,,Mishal Husain,Question 2 - Brexit,3.0,2037.0
+2017-05-31 20:03:57,Labour,Jeremy Corbyn,Question 2 - Brexit,22.0,2059.0
+2017-05-31 20:04:19,Green,Caroline Lucas,Question 2 - Brexit,1.0,2060.0
+2017-05-31 20:04:20,Labour,Jeremy Corbyn,Question 2 - Brexit,19.0,2079.0
+2017-05-31 20:04:39,SNP,Angus Robertson,Question 2 - Brexit,1.0,2080.0
+2017-05-31 20:04:40,Labour,Jeremy Corbyn,Question 2 - Brexit,3.0,2083.0
+2017-05-31 20:04:43,SNP,Angus Robertson,Question 2 - Brexit,12.0,2095.0
+2017-05-31 20:04:55,Labour,Jeremy Corbyn,Question 2 - Brexit,3.0,2098.0
+2017-05-31 20:04:58,SNP,Angus Robertson,Question 2 - Brexit,10.0,2108.0
+2017-05-31 20:05:08,Labour,Jeremy Corbyn,Question 2 - Brexit,4.0,2112.0
+2017-05-31 20:05:12,Liberal Democrats,Tim Farron,Question 2 - Brexit,23.0,2135.0
+2017-05-31 20:05:35,,Mishal Husain,Question 2 - Brexit,5.0,2140.0
+2017-05-31 20:05:40,Conservatives,Amber Rudd,Question 2 - Brexit,28.0,2168.0
+2017-05-31 20:06:08,Plaid Cymru,Leanne Wood,Question 2 - Brexit,6.0,2174.0
+2017-05-31 20:06:14,Green,Caroline Lucas,Question 2 - Brexit,29.000000000000004,2203.0
+2017-05-31 20:06:43,Conservatives,Amber Rudd,Question 2 - Brexit,23.0,2226.0
+2017-05-31 20:07:06,,Mishal Husain,Question 2 - Brexit,25.0,2251.0
+2017-05-31 20:07:31,Green,Caroline Lucas,Question 3 - Public services,87.0,2338.0
+2017-05-31 20:08:58,,Mishal Husain,Question 3 - Public services,8.0,2346.0
+2017-05-31 20:09:06,Conservatives,Amber Rudd,Question 3 - Public services,11.0,2357.0
+2017-05-31 20:09:17,Labour,Jeremy Corbyn,Question 3 - Public services,1.0,2358.0
+2017-05-31 20:09:18,Conservatives,Amber Rudd,Question 3 - Public services,8.0,2366.0
+2017-05-31 20:09:26,Plaid Cymru,Leanne Wood,Question 3 - Public services,2.0,2368.0
+2017-05-31 20:09:28,Conservatives,Amber Rudd,Question 3 - Public services,38.0,2406.0
+2017-05-31 20:10:06,Plaid Cymru,Leanne Wood,Question 3 - Public services,1.0,2407.0
+2017-05-31 20:10:07,Labour,Jeremy Corbyn,Question 3 - Public services,41.0,2448.0
+2017-05-31 20:10:48,,Mishal Husain,Question 3 - Public services,5.0,2453.0
+2017-05-31 20:10:53,Labour,Jeremy Corbyn,Question 3 - Public services,28.0,2481.0
+2017-05-31 20:11:21,,Mishal Husain,Question 3 - Public services,1.0,2482.0
+2017-05-31 20:11:22,Labour,Jeremy Corbyn,Question 3 - Public services,25.0,2507.0
+2017-05-31 20:11:47,Plaid Cymru,Leanne Wood,Question 3 - Public services,12.0,2519.0
+2017-05-31 20:11:59,Labour,Jeremy Corbyn,Question 3 - Public services,21.0,2540.0
+2017-05-31 20:12:20,Plaid Cymru,Leanne Wood,Question 3 - Public services,1.0,2541.0
+2017-05-31 20:12:21,Labour,Jeremy Corbyn,Question 3 - Public services,15.000000000000002,2556.0
+2017-05-31 20:12:36,Plaid Cymru,Leanne Wood,Question 3 - Public services,2.0,2558.0
+2017-05-31 20:12:38,,Mishal Husain,Question 3 - Public services,10.0,2568.0
+2017-05-31 20:12:48,SNP,Angus Robertson,Question 3 - Public services,21.0,2589.0
+2017-05-31 20:13:09,Labour,Jeremy Corbyn,Question 3 - Public services,3.0,2592.0
+2017-05-31 20:13:12,SNP,Angus Robertson,Question 3 - Public services,43.0,2635.0
+2017-05-31 20:13:55,,Mishal Husain,Question 3 - Public services,1.0,2636.0
+2017-05-31 20:13:56,SNP,Angus Robertson,Question 3 - Public services,13.0,2649.0
+2017-05-31 20:14:09,Conservatives,Amber Rudd,Question 3 - Public services,3.0,2652.0
+2017-05-31 20:14:12,SNP,Angus Robertson,Question 3 - Public services,1.0,2653.0
+2017-05-31 20:14:13,Conservatives,Amber Rudd,Question 3 - Public services,4.0,2657.0
+2017-05-31 20:14:17,SNP,Angus Robertson,Question 3 - Public services,1.0,2658.0
+2017-05-31 20:14:18,Conservatives,Amber Rudd,Question 3 - Public services,6.0,2664.0
+2017-05-31 20:14:24,Labour,Jeremy Corbyn,Question 3 - Public services,1.0,2665.0
+2017-05-31 20:14:25,Conservatives,Amber Rudd,Question 3 - Public services,10.0,2675.0
+2017-05-31 20:14:35,Labour,Jeremy Corbyn,Question 3 - Public services,1.0,2676.0
+2017-05-31 20:14:36,Conservatives,Amber Rudd,Question 3 - Public services,10.0,2686.0
+2017-05-31 20:14:46,SNP,Angus Robertson,Question 3 - Public services,1.0,2687.0
+2017-05-31 20:14:47,Conservatives,Amber Rudd,Question 3 - Public services,5.0,2692.0
+2017-05-31 20:14:52,Labour,Jeremy Corbyn,Question 3 - Public services,2.0,2694.0
+2017-05-31 20:14:54,Conservatives,Amber Rudd,Question 3 - Public services,4.0,2698.0
+2017-05-31 20:14:58,Labour,Jeremy Corbyn,Question 3 - Public services,2.0,2700.0
+2017-05-31 20:15:00,Conservatives,Amber Rudd,Question 3 - Public services,4.0,2704.0
+2017-05-31 20:15:04,Labour,Jeremy Corbyn,Question 3 - Public services,1.0,2705.0
+2017-05-31 20:15:05,Conservatives,Amber Rudd,Question 3 - Public services,4.0,2709.0
+2017-05-31 20:15:09,,Mishal Husain,Question 3 - Public services,12.0,2721.0
+2017-05-31 20:15:21,Conservatives,Amber Rudd,Question 3 - Public services,26.0,2747.0
+2017-05-31 20:15:47,Labour,Jeremy Corbyn,Question 3 - Public services,3.0,2750.0
+2017-05-31 20:15:50,Liberal Democrats,Tim Farron,Question 3 - Public services,53.0,2803.0
+2017-05-31 20:16:43,,Mishal Husain,Question 3 - Public services,4.0,2807.0
+2017-05-31 20:16:47,Liberal Democrats,Tim Farron,Question 3 - Public services,1.0,2808.0
+2017-05-31 20:16:48,,Mishal Husain,Question 3 - Public services,4.0,2812.0
+2017-05-31 20:16:52,Liberal Democrats,Tim Farron,Question 3 - Public services,41.0,2853.0
+2017-05-31 20:17:33,Green,Caroline Lucas,Question 3 - Public services,1.0,2854.0
+2017-05-31 20:17:34,Liberal Democrats,Tim Farron,Question 3 - Public services,14.0,2868.0
+2017-05-31 20:17:48,Green,Caroline Lucas,Question 3 - Public services,1.0,2869.0
+2017-05-31 20:17:49,Liberal Democrats,Tim Farron,Question 3 - Public services,2.0,2871.0
+2017-05-31 20:17:51,,Mishal Husain,Question 3 - Public services,1.0,2872.0
+2017-05-31 20:17:52,Liberal Democrats,Tim Farron,Question 3 - Public services,4.0,2876.0
+2017-05-31 20:17:56,UKIP,Paul Nuttall,Question 3 - Public services,27.0,2903.0
+2017-05-31 20:18:23,SNP,Angus Robertson,Question 3 - Public services,1.0,2904.0
+2017-05-31 20:18:24,UKIP,Paul Nuttall,Question 3 - Public services,3.0,2907.0
+2017-05-31 20:18:27,SNP,Angus Robertson,Question 3 - Public services,1.0,2908.0
+2017-05-31 20:18:28,UKIP,Paul Nuttall,Question 3 - Public services,9.0,2917.0
+2017-05-31 20:18:37,Liberal Democrats,Tim Farron,Question 3 - Public services,2.0,2919.0
+2017-05-31 20:18:39,UKIP,Paul Nuttall,Question 3 - Public services,15.000000000000002,2934.0
+2017-05-31 20:18:54,,Mishal Husain,Question 3 - Public services,2.0,2936.0
+2017-05-31 20:18:56,UKIP,Paul Nuttall,Question 3 - Public services,20.0,2956.0
+2017-05-31 20:19:16,,Mishal Husain,Question 3 - Public services,38.0,2994.0
+2017-05-31 20:19:54,SNP,Angus Robertson,Question 4 - Security,112.0,3106.0
+2017-05-31 20:21:46,,Mishal Husain,Question 4 - Security,6.0,3112.0
+2017-05-31 20:21:52,Labour,Jeremy Corbyn,Question 4 - Security,81.0,3193.0
+2017-05-31 20:23:13,,Mishal Husain,Question 4 - Security,5.0,3198.0
+2017-05-31 20:23:18,Labour,Jeremy Corbyn,Question 4 - Security,49.0,3247.0
+2017-05-31 20:24:07,,Mishal Husain,Question 4 - Security,12.0,3259.0
+2017-05-31 20:24:19,Labour,Jeremy Corbyn,Question 4 - Security,6.0,3265.0
+2017-05-31 20:24:25,,Mishal Husain,Question 4 - Security,1.0,3266.0
+2017-05-31 20:24:26,Labour,Jeremy Corbyn,Question 4 - Security,21.0,3287.0
+2017-05-31 20:24:47,,Mishal Husain,Question 4 - Security,4.0,3291.0
+2017-05-31 20:24:51,Conservatives,Amber Rudd,Question 4 - Security,46.0,3337.0
+2017-05-31 20:25:37,,Mishal Husain,Question 4 - Security,5.0,3342.0
+2017-05-31 20:25:42,Conservatives,Amber Rudd,Question 4 - Security,44.0,3386.0
+2017-05-31 20:26:26,Labour,Jeremy Corbyn,Question 4 - Security,38.0,3424.0
+2017-05-31 20:27:04,,Mishal Husain,Question 4 - Security,2.0,3426.0
+2017-05-31 20:27:06,Conservatives,Amber Rudd,Question 4 - Security,2.0,3428.0
+2017-05-31 20:27:08,,Mishal Husain,Question 4 - Security,1.0,3429.0
+2017-05-31 20:27:09,Labour,Jeremy Corbyn,Question 4 - Security,3.0,3432.0
+2017-05-31 20:27:12,Conservatives,Amber Rudd,Question 4 - Security,1.0,3433.0
+2017-05-31 20:27:13,,Mishal Husain,Question 4 - Security,14.0,3447.0
+2017-05-31 20:27:27,Liberal Democrats,Tim Farron,Question 4 - Security,95.0,3542.0
+2017-05-31 20:29:02,,Mishal Husain,Question 4 - Security,1.0,3543.0
+2017-05-31 20:29:03,UKIP,Paul Nuttall,Question 4 - Security,28.0,3571.0
+2017-05-31 20:29:31,,Mishal Husain,Question 4 - Security,2.0,3573.0
+2017-05-31 20:29:33,UKIP,Paul Nuttall,Question 4 - Security,4.0,3577.0
+2017-05-31 20:29:37,Liberal Democrats,Tim Farron,Question 4 - Security,1.0,3578.0
+2017-05-31 20:29:38,UKIP,Paul Nuttall,Question 4 - Security,59.00000000000001,3637.0
+2017-05-31 20:30:37,Liberal Democrats,Tim Farron,Question 4 - Security,1.0,3638.0
+2017-05-31 20:30:38,UKIP,Paul Nuttall,Question 4 - Security,1.0,3639.0
+2017-05-31 20:30:39,Liberal Democrats,Tim Farron,Question 4 - Security,7.0,3646.0
+2017-05-31 20:30:46,,Mishal Husain,Question 4 - Security,1.0,3647.0
+2017-05-31 20:30:47,Green,Caroline Lucas,Question 4 - Security,31.000000000000004,3678.0
+2017-05-31 20:31:18,UKIP,Paul Nuttall,Question 4 - Security,1.0,3679.0
+2017-05-31 20:31:19,Green,Caroline Lucas,Question 4 - Security,70.0,3749.0
+2017-05-31 20:32:29,,Mishal Husain,Question 4 - Security,1.0,3750.0
+2017-05-31 20:32:30,Conservatives,Amber Rudd,Question 4 - Security,8.0,3758.0
+2017-05-31 20:32:38,Green,Caroline Lucas,Question 4 - Security,2.0,3760.0
+2017-05-31 20:32:40,Conservatives,Amber Rudd,Question 4 - Security,3.0,3763.0
+2017-05-31 20:32:43,SNP,Angus Robertson,Question 4 - Security,1.0,3764.0
+2017-05-31 20:32:44,Conservatives,Amber Rudd,Question 4 - Security,2.0,3766.0
+2017-05-31 20:32:46,Green,Caroline Lucas,Question 4 - Security,7.0,3773.0
+2017-05-31 20:32:53,Conservatives,Amber Rudd,Question 4 - Security,3.0,3776.0
+2017-05-31 20:32:56,,Mishal Husain,Question 4 - Security,1.0,3777.0
+2017-05-31 20:32:57,Plaid Cymru,Leanne Wood,Question 4 - Security,25.0,3802.0
+2017-05-31 20:33:22,,Mishal Husain,Question 4 - Security,6.0,3808.0
+2017-05-31 20:33:28,Plaid Cymru,Leanne Wood,Question 4 - Security,18.0,3826.0
+2017-05-31 20:33:46,,Mishal Husain,Question 4 - Security,3.0,3829.0
+2017-05-31 20:33:49,Plaid Cymru,Leanne Wood,Question 4 - Security,35.0,3864.0
+2017-05-31 20:34:24,,Mishal Husain,Question 4 - Security,4.0,3868.0
+2017-05-31 20:34:28,Liberal Democrats,Tim Farron,Question 4 - Security,26.0,3894.0
+2017-05-31 20:34:54,,Mishal Husain,Question 4 - Security,1.0,3895.0
+2017-05-31 20:34:55,Liberal Democrats,Tim Farron,Question 4 - Security,2.0,3897.0
+2017-05-31 20:34:57,UKIP,Paul Nuttall,Question 4 - Security,23.0,3920.0
+2017-05-31 20:35:20,,Mishal Husain,Question 4 - Security,1.0,3921.0
+2017-05-31 20:35:21,Green,Caroline Lucas,Question 4 - Security,6.0,3927.0
+2017-05-31 20:35:27,UKIP,Paul Nuttall,Question 4 - Security,14.0,3941.0
+2017-05-31 20:35:41,SNP,Angus Robertson,Question 4 - Security,1.0,3942.0
+2017-05-31 20:35:42,UKIP,Paul Nuttall,Question 4 - Security,6.0,3948.0
+2017-05-31 20:35:48,SNP,Angus Robertson,Question 4 - Security,9.0,3957.0
+2017-05-31 20:35:57,UKIP,Paul Nuttall,Question 4 - Security,1.0,3958.0
+2017-05-31 20:35:58,SNP,Angus Robertson,Question 4 - Security,21.0,3979.0
+2017-05-31 20:36:19,,Mishal Husain,Question 4 - Security,3.0,3982.0
+2017-05-31 20:36:22,Labour,Jeremy Corbyn,Question 4 - Security,15.000000000000002,3997.0
+2017-05-31 20:36:37,UKIP,Paul Nuttall,Question 4 - Security,1.0,3998.0
+2017-05-31 20:36:38,Labour,Jeremy Corbyn,Question 4 - Security,5.0,4003.0
+2017-05-31 20:36:43,UKIP,Paul Nuttall,Question 4 - Security,2.0,4005.0
+2017-05-31 20:36:45,Labour,Jeremy Corbyn,Question 4 - Security,20.0,4025.0
+2017-05-31 20:37:05,,Mishal Husain,Question 4 - Security,27.0,4052.0
+2017-05-31 20:37:32,Liberal Democrats,Tim Farron,Question 5 - Climate change and Trump,52.0,4104.0
+2017-05-31 20:38:24,,Mishal Husain,Question 5 - Climate change and Trump,2.0,4106.0
+2017-05-31 20:38:26,Green,Caroline Lucas,Question 5 - Climate change and Trump,80.0,4186.0
+2017-05-31 20:39:46,,Mishal Husain,Question 5 - Climate change and Trump,3.0,4189.0
+2017-05-31 20:39:49,UKIP,Paul Nuttall,Question 5 - Climate change and Trump,23.0,4212.0
+2017-05-31 20:40:12,,Mishal Husain,Question 5 - Climate change and Trump,1.0,4213.0
+2017-05-31 20:40:13,UKIP,Paul Nuttall,Question 5 - Climate change and Trump,19.0,4232.0
+2017-05-31 20:40:32,,Mishal Husain,Question 5 - Climate change and Trump,12.0,4244.0
+2017-05-31 20:40:44,Labour,Jeremy Corbyn,Question 5 - Climate change and Trump,46.0,4290.0
+2017-05-31 20:41:30,,Mishal Husain,Question 5 - Climate change and Trump,1.0,4291.0
+2017-05-31 20:41:31,Conservatives,Amber Rudd,Question 5 - Climate change and Trump,5.0,4296.0
+2017-05-31 20:41:36,,Mishal Husain,Question 5 - Climate change and Trump,5.0,4301.0
+2017-05-31 20:41:41,Conservatives,Amber Rudd,Question 5 - Climate change and Trump,25.0,4326.0
+2017-05-31 20:42:06,Plaid Cymru,Leanne Wood,Question 5 - Climate change and Trump,6.0,4332.0
+2017-05-31 20:42:12,Conservatives,Amber Rudd,Question 5 - Climate change and Trump,1.0,4333.0
+2017-05-31 20:42:13,Plaid Cymru,Leanne Wood,Question 5 - Climate change and Trump,1.0,4334.0
+2017-05-31 20:42:14,Conservatives,Amber Rudd,Question 5 - Climate change and Trump,15.000000000000002,4349.0
+2017-05-31 20:42:29,Labour,Jeremy Corbyn,Question 5 - Climate change and Trump,1.0,4350.0
+2017-05-31 20:42:30,Plaid Cymru,Leanne Wood,Question 5 - Climate change and Trump,1.0,4351.0
+2017-05-31 20:42:31,Labour,Jeremy Corbyn,Question 5 - Climate change and Trump,3.0,4354.0
+2017-05-31 20:42:34,Plaid Cymru,Leanne Wood,Question 5 - Climate change and Trump,28.0,4382.0
+2017-05-31 20:43:02,,Mishal Husain,Question 5 - Climate change and Trump,2.0,4384.0
+2017-05-31 20:43:04,SNP,Angus Robertson,Question 5 - Climate change and Trump,78.0,4462.0
+2017-05-31 20:44:22,,Mishal Husain,Question 5 - Climate change and Trump,30.000000000000004,4492.0
+2017-05-31 20:44:52,Labour,Jeremy Corbyn,Question 6 - Leadership,65.0,4557.0
+2017-05-31 20:45:57,,Mishal Husain,Question 6 - Leadership,4.0,4561.0
+2017-05-31 20:46:01,UKIP,Paul Nuttall,Question 6 - Leadership,71.0,4632.0
+2017-05-31 20:47:12,Plaid Cymru,Leanne Wood,Question 6 - Leadership,6.0,4638.0
+2017-05-31 20:47:18,UKIP,Paul Nuttall,Question 6 - Leadership,16.0,4654.0
+2017-05-31 20:47:34,Plaid Cymru,Leanne Wood,Question 6 - Leadership,4.0,4658.0
+2017-05-31 20:47:38,UKIP,Paul Nuttall,Question 6 - Leadership,1.0,4659.0
+2017-05-31 20:47:39,Plaid Cymru,Leanne Wood,Question 6 - Leadership,7.0,4666.0
+2017-05-31 20:47:46,UKIP,Paul Nuttall,Question 6 - Leadership,2.0,4668.0
+2017-05-31 20:47:48,Plaid Cymru,Leanne Wood,Question 6 - Leadership,1.0,4669.0
+2017-05-31 20:47:49,UKIP,Paul Nuttall,Question 6 - Leadership,8.0,4677.0
+2017-05-31 20:47:57,,Mishal Husain,Question 6 - Leadership,13.0,4690.0
+2017-05-31 20:48:10,Conservatives,Amber Rudd,Question 6 - Leadership,10.0,4700.0
+2017-05-31 20:48:20,SNP,Angus Robertson,Question 6 - Leadership,1.0,4701.0
+2017-05-31 20:48:21,Conservatives,Amber Rudd,Question 6 - Leadership,8.0,4709.0
+2017-05-31 20:48:29,Labour,Jeremy Corbyn,Question 6 - Leadership,3.0,4712.0
+2017-05-31 20:48:32,Conservatives,Amber Rudd,Question 6 - Leadership,46.0,4758.0
+2017-05-31 20:49:18,,Mishal Husain,Question 6 - Leadership,2.0,4760.0
+2017-05-31 20:49:20,Labour,Jeremy Corbyn,Question 6 - Leadership,11.0,4771.0
+2017-05-31 20:49:31,,Mishal Husain,Question 6 - Leadership,1.0,4772.0
+2017-05-31 20:49:32,Green,Caroline Lucas,Question 6 - Leadership,81.0,4853.0
+2017-05-31 20:50:53,,Mishal Husain,Question 6 - Leadership,1.0,4854.0
+2017-05-31 20:50:54,Liberal Democrats,Tim Farron,Question 6 - Leadership,25.0,4879.0
+2017-05-31 20:51:19,,Mishal Husain,Question 6 - Leadership,1.0,4880.0
+2017-05-31 20:51:20,Liberal Democrats,Tim Farron,Question 6 - Leadership,59.00000000000001,4939.0
+2017-05-31 20:52:19,,Mishal Husain,Question 6 - Leadership,6.0,4945.0
+2017-05-31 20:52:25,SNP,Angus Robertson,Question 6 - Leadership,75.0,5020.0
+2017-05-31 20:53:40,,Mishal Husain,Question 6 - Leadership,2.0,5022.0
+2017-05-31 20:53:42,Plaid Cymru,Leanne Wood,Question 6 - Leadership,39.0,5061.0
+2017-05-31 20:54:21,,Mishal Husain,Question 6 - Leadership,32.0,5093.0
+2017-05-31 20:54:53,UKIP,Paul Nuttall,Closing statements,39.0,5132.0
+2017-05-31 20:55:32,,Mishal Husain,Closing statements,2.0,5134.0
+2017-05-31 20:55:34,Green,Caroline Lucas,Closing statements,40.0,5174.0
+2017-05-31 20:56:14,,Mishal Husain,Closing statements,2.0,5176.0
+2017-05-31 20:56:16,Labour,Jeremy Corbyn,Closing statements,31.000000000000004,5207.0
+2017-05-31 20:56:47,,Mishal Husain,Closing statements,2.0,5209.0
+2017-05-31 20:56:49,SNP,Angus Robertson,Closing statements,30.000000000000004,5239.0
+2017-05-31 20:57:19,,Mishal Husain,Closing statements,2.0,5241.0
+2017-05-31 20:57:21,Plaid Cymru,Leanne Wood,Closing statements,36.0,5277.0
+2017-05-31 20:57:57,,Mishal Husain,Closing statements,1.0,5278.0
+2017-05-31 20:57:58,Liberal Democrats,Tim Farron,Closing statements,32.0,5310.0
+2017-05-31 20:58:30,,Mishal Husain,Closing statements,3.0,5313.0
+2017-05-31 20:58:33,Conservatives,Amber Rudd,Closing statements,32.0,5345.0
+2017-05-31 20:59:05,,Mishal Husain,Closing statements,58.00000000000001,5403.0
