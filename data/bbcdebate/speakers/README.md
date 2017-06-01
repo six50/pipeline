@@ -6,7 +6,7 @@ If you have any questions about these datasets please [contact us @SixFiftyData]
 This data is provided under a [CC-BY-SA license](https://creativecommons.org/licenses/by-sa/3.0/). This means you are free to reuse the data for any reason, as long as you give attribution to "SixFifty.org.uk" and any reuse is shared under the same licence.
 
 ## 31st May 2017 BBC Debate Speaker Log
-The following dataset is available for download from this repo:
+The following dataset is available for download from this repo: **[`bbcdebate_log.csv`](https://github.com/six50/pipeline/raw/master/data/bbcdebate/speakers/bbcdebate_log.csv)**
 
 | Column | Type | Description |
 | -- | -- | -- |
