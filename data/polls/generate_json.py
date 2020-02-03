@@ -26,13 +26,24 @@ if __name__ == "__main__":
     print("Downloading from Google Sheet")
     polls = {}
     for geo in urls:
-        polls[geo] = pd.read_csv(urls[geo])
+        polls[geo] = pd.read_csv(urls[geo], low_memory=False)
 
     # PROCESS
     # Define parties, respect ordering from Google Doc
     def get_party_names(input_list):
         # Ignore these columns
-        cols_to_ignore = ["Company", "Client", "Type", "Method", "From", "To", "Sample Size", "Source", "PDF"]
+        cols_to_ignore = [
+            "Company",
+            "Client",
+            "Type",
+            "Method",
+            "From",
+            "To",
+            "Sample Size",
+            "Source",
+            "PDF",
+            "DataSource",
+        ]
         for col_name in cols_to_ignore:
             if col_name in input_list:
                 input_list.remove(col_name)
@@ -111,7 +122,7 @@ if __name__ == "__main__":
         body = str(file_path.resolve())
         acl = "public-read"
         check_call(
-            ["aws s3api put-object --bucket sixfifty --key '{0}' --body '{1}' --acl {2}".format(key, body, acl)],
+            [f"aws s3api put-object --bucket sixfifty --key '{key}' --body '{body}' --acl {acl}"],
             stdout=DEVNULL,
             stderr=STDOUT,
             shell=True,

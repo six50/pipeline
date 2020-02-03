@@ -21,9 +21,10 @@ ipython-genutils==0.2.0   # via traitlets
 ipython==7.12.0
 jedi==0.16.0              # via ipython
 jmespath==0.9.4           # via botocore
-numpy==1.18.1             # via pandas, pyarrow
+numpy==1.18.1             # via pandas, patsy, pyarrow, scipy, statsmodels
 pandas==1.0.0
 parso==0.6.0              # via jedi
+patsy==0.5.1              # via statsmodels
 pexpect==4.8.0            # via ipython
 pickleshare==0.7.5        # via ipython
 pip-tools==4.4.1
@@ -38,7 +39,9 @@ pyyaml==5.2               # via awscli
 requests==2.22.0
 rsa==3.4.2                # via awscli
 s3transfer==0.3.2         # via awscli
-six==1.14.0               # via pip-tools, pyarrow, python-dateutil, traitlets
+scipy==1.4.1              # via statsmodels
+six==1.14.0               # via patsy, pip-tools, pyarrow, python-dateutil, traitlets
+statsmodels==0.11.0
 traitlets==4.3.3          # via ipython
 urllib3==1.25.8           # via botocore, requests
 wcwidth==0.1.8            # via prompt-toolkit
